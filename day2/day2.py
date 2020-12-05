@@ -1,5 +1,5 @@
 input = []
-with open("input2") as f:
+with open("input") as f:
     input = list(f.readlines())
 
 i = 0
