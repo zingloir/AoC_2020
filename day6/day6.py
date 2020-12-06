@@ -2,7 +2,7 @@ with open ('input') as f:
     lines = f.read().split('\n\n')
 print(lines)
 
-
+# Fügt jeden Buchstaben, der im Input vorkommt, genau einmal in yes ein und gibt dann die Anzahl der gefundenen Buchstaben zurück
 def partone(line_input):
     yes = []
     for j in range(len(line_input)):
@@ -11,7 +11,7 @@ def partone(line_input):
                 yes.append(c)
     return len(yes)
 
-
+# Fügt alle Buchstaben, die in allen Strings im Input vorkommen, in every_yes ein und gibt die Anzahl der gefundenen Buchstaben zurück
 def parttwo(line_input):
     every_yes = []
     for c in line_input[0]:
@@ -25,7 +25,7 @@ def parttwo(line_input):
             every_yes.append(c)
     return len(every_yes)
 
-
+# Zeilenumbrüche entfernen
 for i in range(len(lines)):
     lines[i] = lines[i].split('\n')
 
