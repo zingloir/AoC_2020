@@ -18,7 +18,7 @@ for bus in busses:
 
 print((min(nextdepart) - depart) * busses[nextdepart.index(min(nextdepart))])
 
-
+# Part 2 - Funktioniert theoretisch, aber nur mit gigantischer Laufzeit
 found = False
 i = 0
 while not found:
